@@ -1,35 +1,99 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <a href="https://laravel.com" target="_blank">
+        <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
+    </a>
 </p>
 
-## About Laravel
+<p align="center">
+    <a href="https://github.com/laravel/framework/actions">
+        <img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status">
+    </a>
+    <a href="https://packagist.org/packages/laravel/framework">
+        <img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads">
+    </a>
+    <a href="https://packagist.org/packages/laravel/framework">
+        <img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version">
+    </a>
+    <a href="https://packagist.org/packages/laravel/framework">
+        <img src="https://img.shields.io/packagist/l/laravel/framework" alt="License">
+    </a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Support Ticket System
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Overview
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The Support Ticket System is a web application built with Laravel that allows customers to submit issues and receive support from admin users. It features email notifications for both customers and admins, ensuring smooth communication regarding tickets. This application helps in efficient ticket management and improves user experience.
 
-## Learning Laravel
+### Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **User Authentication**:
+  - Users can register and log in as either Admin or Customer.
+  
+- **Ticket Management**:
+  - Customers can create, view, and manage their tickets.
+  - Admins can view all tickets, respond to customer tickets, and close tickets.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Email Notifications**:
+  - Admins receive email notifications when a new ticket is created.
+  - Customers receive email notifications when their ticket is closed.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Requirements
 
-## Laravel Sponsors
+- Two types of users: **Admin** and **Customer**.
+- Customers can open tickets to submit their issues.
+- Tickets are visible in both the admin and customer panels.
+- Admins can respond to customer tickets.
+- Customers can open new tickets for further issues.
+
+### Installation
+
+Follow the steps below to set up the project locally:
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/masudrana03/support-ticket-coding-test.git
+    ```
+
+2. **Change directory**:
+    ```bash
+    cd support-ticket-coding-test
+    ```
+
+3. **Copy the environment file**:
+    ```bash
+    cp .env.example .env
+    ```
+
+4. **Install dependencies**:
+    ```bash
+    composer install && npm install
+    ```
+
+5. **Generate application key**:
+    ```bash
+    php artisan key:generate
+    ```
+
+6. **Run migrations and seed the database**:
+    ```bash
+    php artisan migrate --seed
+    ```
+
+7. **Serve the application**:
+    ```bash
+    php artisan serve
+    ```
+
+### One-Click Setup Command
+
+For a quicker setup, you can run the following command:
+
+```bash
+git clone https://github.com/masudrana03/support-ticket-coding-test.git && cd support-ticket-coding-test && cp .env.example .env && composer install && npm install && php artisan key:generate && php artisan migrate --seed && php artisan serve
+```
+
+### Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
